@@ -34,7 +34,30 @@
             <!-- Navigation Links (Hidden on small screens) -->
             <nav class="hidden md:flex space-x-8">
                 <a href="#about" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300">About</a>
-                <a href="#services" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300">Services</a>
+                
+                <!-- NEW: Services Dropdown Menu -->
+                <div class="relative" id="services-dropdown-container">
+                    <button id="services-dropdown-toggle" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300 flex items-center pt-1.5">
+                        Services <i class="fa-solid fa-chevron-down ml-2 text-xs transition duration-300"></i>
+                    </button>
+                    <!-- Dropdown Content (Initially hidden) -->
+                    <div id="services-menu" class="absolute hidden top-full mt-3 w-56 p-2 rounded-xl bg-dark-bg glass-border shadow-2xl origin-top-left left-0 transition transform duration-200">
+                        <a href="#services-bpo" class="block px-3 py-2 text-sm text-text-main hover:bg-primary-lime/10 rounded-lg transition duration-150">
+                            BPO & Customer Ops
+                        </a>
+                        <a href="#services-kpo" class="block px-3 py-2 text-sm text-text-main hover:bg-primary-lime/10 rounded-lg transition duration-150">
+                            KPO & Strategic Intel
+                        </a>
+                        <a href="#services-digital" class="block px-3 py-2 text-sm text-text-main hover:bg-primary-lime/10 rounded-lg transition duration-150">
+                            Digital & Creative
+                        </a>
+                        <a href="#services-tech" class="block px-3 py-2 text-sm text-text-main hover:bg-primary-lime/10 rounded-lg transition duration-150">
+                            Tech Development
+                        </a>
+                    </div>
+                </div>
+                <!-- END NEW: Services Dropdown Menu -->
+
                 <a href="#process" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300">Process</a>
                 <a href="#contact" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300">Contact</a>
             </nav>
@@ -87,59 +110,59 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service Card 1: BPO -->
-                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                <!-- Service Card 1: BPO (Updated Content & ID) -->
+                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5" id="services-bpo">
                     <div class="w-16 h-16 bg-primary-lime/10 text-primary-lime rounded-xl flex items-center justify-center text-3xl mb-6">
                         <i class="fa-solid fa-headset"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">BPO: Customer Ops</h3>
-                    <p class="text-text-muted mb-4">Turning support centers into profit centers with radical ownership.</p>
+                    <p class="text-text-muted mb-4">Focus on customer lifecycle management and maximizing client retention.</p>
                     <ul class="space-y-2 text-sm text-text-muted">
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> 24/7 Omni-Support</li>
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Sales & Lead Gen</li>
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Order Management</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Voice/Non-Voice Support (24/7)</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Lead Generation & Telecalling</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Order Management & Scheduling</li>
                     </ul>
                 </div>
 
-                <!-- Service Card 2: KPO -->
-                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                <!-- Service Card 2: KPO (Updated Content & ID) -->
+                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5" id="services-kpo">
                     <div class="w-16 h-16 bg-primary-lime/10 text-primary-lime rounded-xl flex items-center justify-center text-3xl mb-6">
                         <i class="fa-solid fa-chart-pie"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">KPO: Strategic Intel</h3>
-                    <p class="text-text-muted mb-4">Data-driven insights to help you make smarter decisions faster.</p>
+                    <p class="text-text-muted mb-4">High-level support for executive decision-making and market penetration.</p>
                     <ul class="space-y-2 text-sm text-text-muted">
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Market Research</li>
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Data Analytics</li>
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Financial Analysis</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Market & Competitor Research</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Data Analytics & Report Building</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Financial Analysis & Virtual Assistance</li>
                     </ul>
                 </div>
 
-                <!-- Service Card 3: Digital -->
-                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                <!-- Service Card 3: Digital (Updated Content & ID) -->
+                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5" id="services-digital">
                     <div class="w-16 h-16 bg-primary-lime/10 text-primary-lime rounded-xl flex items-center justify-center text-3xl mb-6">
                         <i class="fa-solid fa-rocket"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Digital Growth</h3>
-                    <p class="text-text-muted mb-4">Amplifying your brand voice across the digital landscape.</p>
+                    <p class="text-text-muted mb-4">Integrated design and marketing to amplify brand voice and maximize reach.</p>
                     <ul class="space-y-2 text-sm text-text-muted">
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> SEO & PPC</li>
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Brand Design</li>
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Social Management</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Performance Marketing (SEO/PPC)</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> UI/UX & Creative Design</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Social Media & Content Promotions</li>
                     </ul>
                 </div>
 
-                <!-- Service Card 4: Tech -->
-                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                <!-- Service Card 4: Tech (Updated Content & ID) -->
+                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5" id="services-tech">
                     <div class="w-16 h-16 bg-primary-lime/10 text-primary-lime rounded-xl flex items-center justify-center text-3xl mb-6">
                         <i class="fa-solid fa-code"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3">Tech Infrastructure</h3>
-                    <p class="text-text-muted mb-4">Robust development to power your operations.</p>
+                    <p class="text-text-muted mb-4">Custom coding and scalable infrastructure to support complex operations.</p>
                     <ul class="space-y-2 text-sm text-text-muted">
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Backend Dev</li>
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Custom Automation</li>
-                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Platform Maintenance</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Backend & API Development</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Custom Software & Automation</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Web & Platform Maintenance</li>
                     </ul>
                 </div>
             </div>
@@ -264,7 +287,8 @@
                     </button>
                 </form>
                 <p id="contact-message" class="mt-4 text-sm text-primary-lime h-5"></p>
-                <p class="mt-4 text-sm text-text-muted">Direct Contact: <a href="mailto:contact@cognera.com" class="hover:text-primary-lime transition">contact@cognera.com</a></p>
+                <!-- UPDATED CONTACT EMAIL -->
+                <p class="mt-4 text-sm text-text-muted">Direct Contact: <a href="mailto:cognerasolutions@gmail.com" class="hover:text-primary-lime transition">cognerasolutions@gmail.com</a></p>
             </div>
         </div>
     </section>
@@ -283,10 +307,10 @@
                 <div>
                     <h4 class="font-bold mb-4 text-lg">Services</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#services" class="text-text-muted hover:text-primary-lime transition">BPO & Support</a></li>
-                        <li><a href="#services" class="text-text-muted hover:text-primary-lime transition">KPO & Analytics</a></li>
-                        <li><a href="#services" class="text-text-muted hover:text-primary-lime transition">Digital Marketing</a></li>
-                        <li><a href="#services" class="text-text-muted hover:text-primary-lime transition">Tech Dev</a></li>
+                        <li><a href="#services-bpo" class="text-text-muted hover:text-primary-lime transition">BPO & Support</a></li>
+                        <li><a href="#services-kpo" class="text-text-muted hover:text-primary-lime transition">KPO & Analytics</a></li>
+                        <li><a href="#services-digital" class="text-text-muted hover:text-primary-lime transition">Digital Marketing</a></li>
+                        <li><a href="#services-tech" class="text-text-muted hover:text-primary-lime transition">Tech Dev</a></li>
                     </ul>
                 </div>
 
@@ -296,7 +320,7 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="#about" class="text-text-muted hover:text-primary-lime transition">About Us</a></li>
                         <li><a href="#process" class="text-text-muted hover:text-primary-lime transition">Process</a></li>
-                        <li><a href="#contact" class="text-text-muted hover:text-primary-lime transition">Contact</a></li>
+                        <li><a href="mailto:cognerasolutions@gmail.com" class="text-text-muted hover:text-primary-lime transition">Contact</a></li>
                     </ul>
                 </div>
                 
@@ -347,6 +371,15 @@
                 left: 31px;
             }
         }
+        /* Dropdown transition styles */
+        .dropdown-menu-open {
+            display: block !important;
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
+        .dropdown-chevron-rotate {
+            transform: rotate(180deg);
+        }
     </style>
 
     <!-- Configure Tailwind to use Urbanist font and custom colors -->
@@ -369,25 +402,61 @@
             }
         }
 
-        // Dedicated JavaScript listener for reliable form submission simulation
+        // Dedicated JavaScript listener for reliable form submission simulation and DROPDOWN
         document.addEventListener('DOMContentLoaded', () => {
             const form = document.getElementById('contact-form');
             const message = document.getElementById('contact-message');
+            const dropdownToggle = document.getElementById('services-dropdown-toggle');
+            const dropdownMenu = document.getElementById('services-menu');
+            const dropdownChevron = dropdownToggle.querySelector('.fa-chevron-down');
+            const dropdownLinks = dropdownMenu.querySelectorAll('a');
 
+
+            // 1. Form Submission Handler
             if (form) {
                 form.addEventListener('submit', (event) => {
-                    // Prevent default form submission (important for static sites without a real backend)
                     event.preventDefault(); 
-                    
-                    // Show success message and clear form
-                    console.log('Form submission simulated successfully.');
                     message.innerText = 'Thank you for your interest! We will contact you shortly.';
                     form.reset();
                     
-                    // Optionally clear the message after a few seconds
                     setTimeout(() => {
                         message.innerText = '';
                     }, 5000);
+                });
+            }
+
+            // 2. Dropdown Toggle Handler
+            if (dropdownToggle && dropdownMenu) {
+                const toggleDropdown = () => {
+                    dropdownMenu.classList.toggle('hidden');
+                    dropdownMenu.classList.toggle('opacity-0');
+                    dropdownMenu.classList.toggle('scale-95');
+
+                    dropdownMenu.classList.toggle('dropdown-menu-open');
+                    dropdownChevron.classList.toggle('dropdown-chevron-rotate');
+                };
+
+                dropdownToggle.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevents document click from immediately closing it
+                    toggleDropdown();
+                });
+                
+                // Close dropdown when a link inside is clicked
+                dropdownLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (dropdownMenu.classList.contains('dropdown-menu-open')) {
+                            toggleDropdown();
+                        }
+                    });
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!dropdownMenu.contains(e.target) && !dropdownToggle.contains(e.target)) {
+                         if (dropdownMenu.classList.contains('dropdown-menu-open')) {
+                            toggleDropdown();
+                        }
+                    }
                 });
             }
         });
