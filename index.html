@@ -76,4 +76,295 @@
             <!-- Logo -->
             <div class="flex items-center space-x-2">
                 <!-- SVG Logo Concept: The Pulse -->
-                <svg width="40" height
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary-lime">
+                    <circle cx="20" cy="20" r="20" fill="#0F172A"/>
+                    <path d="M10 20L15 20L18 15L22 25L25 20H30" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="font-extrabold text-xl tracking-tight">COGNERA</span>
+            </div>
+            
+            <!-- Navigation Links (Hidden on small screens) -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300">About</a>
+                <a href="#services" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300">Services</a>
+                <a href="#process" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300">Process</a>
+                <a href="#contact" class="text-text-muted hover:text-primary-lime font-semibold transition duration-300">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="px-4 py-2 bg-primary-lime text-dark-bg text-sm font-bold rounded-full shadow-lg shadow-primary-lime/30 hover:shadow-primary-lime/50 transition duration-300 transform hover:-translate-y-0.5 hidden sm:block">
+                Get Started
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-24 relative overflow-hidden" id="hero">
+        <!-- Background Glows -->
+        <div class="absolute top-[-20%] right-[-10%] w-3/5 max-w-xl h-3/5 max-h-xl rounded-full bg-primary-lime opacity-5 blur-[150px] pointer-events-none"></div>
+        <div class="absolute bottom-[-20%] left-[-10%] w-3/5 max-w-lg h-3/5 max-h-lg rounded-full bg-accent-blue opacity-5 blur-[150px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl">
+                <p class="text-primary-lime font-bold tracking-widest uppercase mb-4 text-sm">The New Standard in Outsourcing</p>
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold leading-tight mb-6">
+                    Global Growth Engine. 
+                    <br> 
+                    <span class="text-gradient">Strategy + Execution.</span>
+                </h1>
+                <p class="text-xl text-text-muted mb-10 max-w-xl">
+                    We don't just support your business; we accelerate it. Integrating BPO, KPO, Digital, and Tech into a single ecosystem for measurable revenue growth.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#contact" class="px-8 py-4 bg-primary-lime text-dark-bg font-bold rounded-full shadow-xl shadow-primary-lime/40 hover:scale-[1.02] transition duration-300">Book Strategy Call</a>
+                    <a href="#services" class="px-8 py-4 glass-border text-text-main font-bold rounded-full hover:bg-white/10 transition duration-300">Explore Ecosystem</a>
+                </div>
+
+                <div class="flex flex-wrap gap-x-8 gap-y-4 text-sm text-text-muted">
+                    <div class="flex items-center"><i class="fa-solid fa-check-circle text-primary-lime mr-2"></i> Sales-First DNA</div>
+                    <div class="flex items-center"><i class="fa-solid fa-check-circle text-primary-lime mr-2"></i> Global Reach (US/UK/GCC)</div>
+                    <div class="flex items-center"><i class="fa-solid fa-check-circle text-primary-lime mr-2"></i> 24/7 Operations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-extrabold mb-4">Our Ecosystem</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">Four pillars. One integrated growth machine.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1: BPO -->
+                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                    <div class="w-16 h-16 bg-primary-lime/10 text-primary-lime rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">BPO: Customer Ops</h3>
+                    <p class="text-text-muted mb-4">Turning support centers into profit centers with radical ownership.</p>
+                    <ul class="space-y-2 text-sm text-text-muted">
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> 24/7 Omni-Support</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Sales & Lead Gen</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Order Management</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2: KPO -->
+                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                    <div class="w-16 h-16 bg-primary-lime/10 text-primary-lime rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">KPO: Strategic Intel</h3>
+                    <p class="text-text-muted mb-4">Data-driven insights to help you make smarter decisions faster.</p>
+                    <ul class="space-y-2 text-sm text-text-muted">
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Market Research</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Data Analytics</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Financial Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3: Digital -->
+                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                    <div class="w-16 h-16 bg-primary-lime/10 text-primary-lime rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Digital Growth</h3>
+                    <p class="text-text-muted mb-4">Amplifying your brand voice across the digital landscape.</p>
+                    <ul class="space-y-2 text-sm text-text-muted">
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> SEO & PPC</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Brand Design</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Social Management</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4: Tech -->
+                <div class="p-8 rounded-xl bg-card-bg glass-border hover:border-primary-lime/40 transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                    <div class="w-16 h-16 bg-primary-lime/10 text-primary-lime rounded-xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Tech Infrastructure</h3>
+                    <p class="text-text-muted mb-4">Robust development to power your operations.</p>
+                    <ul class="space-y-2 text-sm text-text-muted">
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Backend Dev</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Custom Automation</li>
+                        <li class="flex items-center"><span class="text-primary-lime mr-2 text-xl">•</span> Platform Maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Difference Section -->
+    <section id="about" class="py-24 bg-slate-900/40">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="lg:order-2">
+                    <span class="text-primary-lime font-bold tracking-widest uppercase text-sm mb-3 block">THE COGNERA DIFFERENCE</span>
+                    <h2 class="text-4xl sm:text-5xl font-extrabold mb-6">Boutique Agility. <br>Enterprise Scale.</h2>
+                    <p class="text-lg text-text-muted mb-6">
+                        Traditional BPOs focus on hours worked. We focus on value delivered. Founded by leaders who managed Tier-1 accounts for giants like DoorDash and Indeed, we bring a "Founder's Mentality" to your operations.
+                    </p>
+                    <p class="text-lg text-text-muted mb-8">
+                        We don't just hire staff; we recruit problem solvers who are rigorously trained in sales psychology and proactive communication.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-4 border-t border-gray-700/50">
+                        <div>
+                            <h4 class="text-5xl font-extrabold text-primary-lime">-40%</h4>
+                            <span class="text-sm uppercase tracking-wider text-text-muted">Error Reduction</span>
+                        </div>
+                        <div>
+                            <h4 class="text-5xl font-extrabold text-primary-lime">100%</h4>
+                            <span class="text-sm uppercase tracking-wider text-text-muted">Client Retention</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:order-1 h-96 bg-gray-900 rounded-3xl glass-border relative overflow-hidden flex items-center justify-center shadow-2xl">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-5">
+                        <span class="text-[180px] font-black text-white select-none">CO</span>
+                    </div>
+                    <div class="text-center z-10 p-8 bg-black/20 rounded-xl">
+                        <i class="fa-solid fa-users-gear text-6xl text-primary-lime mb-4"></i>
+                        <h3 class="text-3xl font-bold text-white">Radical Ownership</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section (Timeline) -->
+    <section id="process" class="py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-extrabold mb-4">Path to Value</h2>
+                <p class="text-lg text-text-muted max-w-2xl mx-auto">Your first 90 days. A structured roadmap to stability and scale.</p>
+            </div>
+            
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Timeline Vertical Line -->
+                <div class="timeline-line absolute"></div>
+
+                <!-- Timeline Items -->
+                <div class="relative">
+                    <!-- Item 1: Audit & Discovery (Left) -->
+                    <div class="timeline-item w-full md:w-1/2 md:pr-16 mb-12 relative md:float-left clear-both text-left md:text-right">
+                        <div class="md:float-right w-6 h-6 rounded-full bg-dark-bg border-2 border-primary-lime absolute top-4 left-6 md:left-auto md:right-[-12px] z-10"></div>
+                        <div class="p-6 rounded-xl bg-card-bg glass-border relative transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                            <span class="text-xs uppercase tracking-widest text-text-muted block mb-1">Phase 01: Weeks 1-2</span>
+                            <h3 class="text-xl font-bold text-primary-lime mb-2">Audit & Discovery</h3>
+                            <p class="text-sm text-text-muted">We map your current processes, identify bottlenecks, and define the KPIs that matter most to your revenue.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Talent Alignment (Right) -->
+                    <div class="timeline-item w-full md:w-1/2 md:pl-16 mb-12 relative md:float-right clear-both text-left">
+                        <div class="w-6 h-6 rounded-full bg-dark-bg border-2 border-primary-lime absolute top-4 left-6 md:left-[-12px] z-10"></div>
+                        <div class="p-6 rounded-xl bg-card-bg glass-border relative transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                            <span class="text-xs uppercase tracking-widest text-text-muted block mb-1">Phase 02: Weeks 3-4</span>
+                            <h3 class="text-xl font-bold text-primary-lime mb-2">Talent Alignment</h3>
+                            <p class="text-sm text-text-muted">We don't pull from a bench. We recruit the "Top 1%" talent specifically suited for your account culture.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Go-Live & Stabilize (Left) -->
+                    <div class="timeline-item w-full md:w-1/2 md:pr-16 mb-12 relative md:float-left clear-both text-left md:text-right">
+                        <div class="md:float-right w-6 h-6 rounded-full bg-dark-bg border-2 border-primary-lime absolute top-4 left-6 md:left-auto md:right-[-12px] z-10"></div>
+                        <div class="p-6 rounded-xl bg-card-bg glass-border relative transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                            <span class="text-xs uppercase tracking-widest text-text-muted block mb-1">Phase 03: Month 2</span>
+                            <h3 class="text-xl font-bold text-primary-lime mb-2">Go-Live & Stabilize</h3>
+                            <p class="text-sm text-text-muted">Operations begin. We focus on accuracy, seamless integration, and initial feedback loops.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Optimize & Scale (Right) -->
+                    <div class="timeline-item w-full md:w-1/2 md:pl-16 mb-12 relative md:float-right clear-both text-left">
+                        <div class="w-6 h-6 rounded-full bg-dark-bg border-2 border-primary-lime absolute top-4 left-6 md:left-[-12px] z-10"></div>
+                        <div class="p-6 rounded-xl bg-card-bg glass-border relative transition duration-300 hover:shadow-xl hover:shadow-primary-lime/5">
+                            <span class="text-xs uppercase tracking-widest text-text-muted block mb-1">Phase 04: Month 3+</span>
+                            <h3 class="text-xl font-bold text-primary-lime mb-2">Optimize & Scale</h3>
+                            <p class="text-sm text-text-muted">We shift to growth mode, implementing automation, process improvements, and scaling volume.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-primary-lime/10 to-transparent rounded-3xl p-10 sm:p-20 text-center glass-border">
+                <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">Ready to Scale?</h2>
+                <p class="text-lg text-text-muted max-w-3xl mx-auto mb-10">
+                    Stop managing vendors. Start partnering for growth. Book a free 30-minute strategy session with our leadership team.
+                </p>
+                
+                <form onsubmit="event.preventDefault(); console.log('Form Submitted!'); document.getElementById('contact-message').innerText = 'Thank you for your interest! We will contact you shortly.'; this.reset();" class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your work email" required class="flex-grow px-6 py-4 rounded-full border border-gray-700 bg-gray-900/50 text-white placeholder-gray-500 focus:ring-2 focus:ring-primary-lime focus:border-primary-lime/50 transition duration-300 outline-none">
+                    <button type="submit" class="px-8 py-4 bg-primary-lime text-dark-bg font-bold rounded-full shadow-xl shadow-primary-lime/40 hover:scale-[1.02] transition duration-300">
+                        Get Strategy
+                    </button>
+                </form>
+                <p id="contact-message" class="mt-4 text-sm text-primary-lime h-5"></p>
+                <p class="mt-4 text-sm text-text-muted">Direct Contact: <a href="mailto:contact@cognera.com" class="hover:text-primary-lime transition">contact@cognera.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-24 pt-12 pb-6 border-t border-gray-800 bg-slate-900/20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Info -->
+                <div class="col-span-2 md:col-span-1">
+                    <span class="font-extrabold text-2xl text-white">COGNERA</span>
+                    <p class="text-text-muted mt-3 text-sm max-w-xs">Your Global Growth Engine. Integrating Strategy, BPO, KPO, & Tech.</p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="text-text-muted hover:text-primary-lime transition">BPO & Support</a></li>
+                        <li><a href="#services" class="text-text-muted hover:text-primary-lime transition">KPO & Analytics</a></li>
+                        <li><a href="#services" class="text-text-muted hover:text-primary-lime transition">Digital Marketing</a></li>
+                        <li><a href="#services" class="text-text-muted hover:text-primary-lime transition">Tech Dev</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="text-text-muted hover:text-primary-lime transition">About Us</a></li>
+                        <li><a href="#process" class="text-text-muted hover:text-primary-lime transition">Process</a></li>
+                        <li><a href="#contact" class="text-text-muted hover:text-primary-lime transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Connect -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Connect</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-text-muted hover:text-primary-lime transition">LinkedIn</a></li>
+                        <li><a href="#" class="text-text-muted hover:text-primary-lime transition">Twitter</a></li>
+                        <li><a href="#" class="text-text-muted hover:text-primary-lime transition">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center pt-6 border-t border-gray-800/50">
+                <p class="text-xs text-gray-600">
+                    &copy; 2024 Cognera Solutions Pvt. Ltd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
