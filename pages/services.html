@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Cognera Solutions</title>
+    <meta name="description" content="Discover Cognera's integrated services: BPO for data operations, RPO for talent acquisition, and strategic marketing & business development solutions.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Services - Cognera Solutions">
+    <meta property="og:description" content="Discover Cognera's integrated BPO, RPO, and strategic marketing solutions.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons: Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#2563EB',
+                            purple: '#7C3AED',
+                            orange: '#F97316',
+                            teal: '#0D9488',
+                            dark: '#0F172A',
+                            light: '#edf2f7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Loading Animation -->
+    <style>
+        body { opacity: 0; animation: fadeInBody 0.5s ease-out 0.1s forwards; }
+        @keyframes fadeInBody { to { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-brand-light text-slate-800 font-sans antialiased overflow-x-hidden">
+
+<!-- Navigation Bar -->
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-lg shadow-nav transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center text-white shadow-lg group-hover:shadow-brand-blue/50 transition-all duration-300">
+                    <i class="fa-solid fa-cube text-xl"></i>
+                </div>
+                <span class="font-bold text-2xl tracking-tight text-slate-900">Cognera<span class="text-brand-orange">.</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="../index.html" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition">Home</a>
+                <a href="../index.html#about" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition">Why Us</a>
+                <a href="../index.html#process" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition">Process</a>
+                <a href="./services.html" class="text-sm font-bold text-brand-blue transition">Services</a>
+                <a href="./portfolio.html" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition">Portfolio <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="../index.html#contact" class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-bold rounded-full text-white bg-brand-dark hover:bg-brand-blue transition-colors shadow-lg hover:shadow-brand-blue/30">
+                Contact Our Team
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden absolute top-20 left-0 w-full bg-white border-t border-slate-100 shadow-xl p-4 flex flex-col gap-4">
+        <a href="../index.html" class="text-slate-700 font-semibold p-2 hover:bg-slate-50 rounded-lg">Home</a>
+        <a href="../index.html#about" class="text-slate-700 font-semibold p-2 hover:bg-slate-50 rounded-lg">Why Us</a>
+        <a href="../index.html#process" class="text-slate-700 font-semibold p-2 hover:bg-slate-50 rounded-lg">Process</a>
+        <a href="./services.html" class="text-brand-blue font-semibold p-2 bg-blue-50 rounded-lg">Services</a>
+        <a href="./portfolio.html" class="text-slate-700 font-semibold p-2 hover:bg-slate-50 rounded-lg flex items-center justify-between">Portfolio <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
+        <a href="../index.html#contact" class="text-center w-full py-3 bg-brand-blue text-white font-bold rounded-xl">Contact Us</a>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="pt-32 pb-16 page-header-gradient">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Breadcrumb -->
+        <nav class="flex mb-6" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-2 text-sm">
+                <li><a href="../index.html" class="text-slate-400 hover:text-white transition">Home</a></li>
+                <li><span class="text-slate-500 breadcrumb-separator">/</span></li>
+                <li><span class="text-white font-medium">Services</span></li>
+            </ol>
+        </nav>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6">
+            Our <span class="text-brand-blue">Services</span>
+        </h1>
+        <p class="text-xl text-slate-300 max-w-3xl">
+            Driving efficiency and growth through integrated BPO, RPO, and strategic marketing solutions tailored to your business needs.
+        </p>
+    </div>
+</section>
+
+<!-- BPO Section -->
+<section id="bpo" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 mb-12">
+            <div class="w-14 h-14 rounded-2xl bg-brand-blue text-white flex items-center justify-center text-2xl shadow-lg shadow-blue-300/50">
+                <i class="fa-solid fa-database"></i>
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Business Process Outsourcing</h2>
+                <p class="text-brand-blue font-semibold">Data & Operations Excellence</p>
+            </div>
+        </div>
+        
+        <p class="text-lg text-slate-600 mb-12 max-w-4xl">
+            We manage high-volume, repetitive data tasks with meticulous precision, providing the human workforce required to maintain data integrity and support complex operational workflows.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- High-Volume Data Processing -->
+            <div class="bg-brand-light rounded-2xl p-8 service-card-blue card-hover">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">High-Volume Data Processing</h3>
+                <p class="text-slate-600 mb-6">
+                    Handling large-scale data entry, cleaning, classification, and verification across multiple systems. We ensure data readiness for analysis or operational use.
+                </p>
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-sm font-semibold text-brand-blue">Strategic Benefit:</p>
+                    <p class="text-sm text-slate-500 mt-1">Guarantees high data accuracy, eliminates internal resource strain, and ensures fast project turnaround.</p>
+                </div>
+            </div>
+
+            <!-- Specialized Content Operations -->
+            <div class="bg-brand-light rounded-2xl p-8 service-card-blue card-hover">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Specialized Content Operations</h3>
+                <p class="text-slate-600 mb-6">
+                    Expert management of complex data and content workflows, including menu creation (F&B), product catalog quality checks (E-commerce), and content tagging.
+                </p>
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-sm font-semibold text-brand-blue">Strategic Benefit:</p>
+                    <p class="text-sm text-slate-500 mt-1">Supports quick market entry and guarantees consumer-facing content is accurate, consistent, and optimized.</p>
+                </div>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="bg-brand-light rounded-2xl p-8 service-card-blue card-hover">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Customer Support & Service</h3>
+                <p class="text-slate-600 mb-6">
+                    Comprehensive omnichannel contact center services, including 24/7 technical support, customer care via chat, email, and voice platforms.
+                </p>
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-sm font-semibold text-brand-blue">Strategic Benefit:</p>
+                    <p class="text-sm text-slate-500 mt-1">Enhanced Customer Experience (CX) through professional engagement and consistent quality service delivery.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RPO Section -->
+<section id="rpo" class="py-20 bg-brand-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 mb-12">
+            <div class="w-14 h-14 rounded-2xl bg-brand-purple text-white flex items-center justify-center text-2xl shadow-lg shadow-purple-300/50">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Recruitment Process Outsourcing</h2>
+                <p class="text-brand-purple font-semibold">Talent Acquisition</p>
+            </div>
+        </div>
+        
+        <p class="text-lg text-slate-600 mb-12 max-w-4xl">
+            We provide a scalable, integrated solution for managing your entire recruitment function, ensuring you attract and secure the specialized talent required for growth.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- End-to-End Recruitment -->
+            <div class="bg-white rounded-2xl p-8 service-card-purple card-hover shadow-lg">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 text-brand-purple flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-user-check"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">End-to-End Recruitment Management</h3>
+                <p class="text-slate-600 mb-6">
+                    Full-cycle talent acquisition: strategic sourcing, detailed screening, scheduling, offer negotiation, and background checks across diverse functional roles.
+                </p>
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-sm font-semibold text-brand-purple">Strategic Benefit:</p>
+                    <p class="text-sm text-slate-500 mt-1">Faster time-to-hire and consistent, elevated candidate experience, leading to improved quality of hires.</p>
+                </div>
+            </div>
+
+            <!-- Scalable Workforce -->
+            <div class="bg-white rounded-2xl p-8 service-card-purple card-hover shadow-lg">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 text-brand-purple flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Scalable Global Workforce Solutions</h3>
+                <p class="text-slate-600 mb-6">
+                    Capacity to rapidly expand your talent pool for seasonal demands, large-scale projects, or specific regional needs, including focused USA recruitment campaigns.
+                </p>
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-sm font-semibold text-brand-purple">Strategic Benefit:</p>
+                    <p class="text-sm text-slate-500 mt-1">Immediate agility to meet high-volume demands without incurring fixed costs or resource burden on internal HR teams.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Marketing & BD Section -->
+<section id="marketing" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 mb-12">
+            <div class="w-14 h-14 rounded-2xl bg-brand-orange text-white flex items-center justify-center text-2xl shadow-lg shadow-orange-300/50">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Integrated Marketing & Business Development</h2>
+                <p class="text-brand-orange font-semibold">Strategic Growth Solutions</p>
+            </div>
+        </div>
+        
+        <p class="text-lg text-slate-600 mb-12 max-w-4xl">
+            Our marketing arm focuses on data-driven strategy, while our business development support enables global sales expansion and market penetration.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Global Business Development -->
+            <div class="bg-brand-light rounded-2xl p-8 service-card-orange card-hover">
+                <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Global Business Development</h3>
+                <p class="text-slate-600 mb-6">
+                    Strategic support for Manufacturing OEMs seeking expansion into USA, UK, Europe, Middle East & Africa, and Southeast Asia/Australia. Includes market research, territory mapping, and lead identification.
+                </p>
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-sm font-semibold text-brand-orange">Strategic Benefit:</p>
+                    <p class="text-sm text-slate-500 mt-1">Accelerated, risk-mitigated entry into new high-value markets and a direct pathway to international sales growth.</p>
+                </div>
+            </div>
+
+            <!-- Digital Strategy -->
+            <div class="bg-brand-light rounded-2xl p-8 service-card-orange card-hover">
+                <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Digital Strategy & Execution</h3>
+                <p class="text-slate-600 mb-6">
+                    Full-funnel management including SEO optimization, PPC campaigns, Content Strategy, and high-impact Social Media Management for maximum visibility.
+                </p>
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-sm font-semibold text-brand-orange">Strategic Benefit:</p>
+                    <p class="text-sm text-slate-500 mt-1">Consistent, measurable flow of qualified leads and maximized ROI from your advertising spend.</p>
+                </div>
+            </div>
+
+            <!-- Data & Analytics -->
+            <div class="bg-brand-light rounded-2xl p-8 service-card-orange card-hover">
+                <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Data & Performance Analytics</h3>
+                <p class="text-slate-600 mb-6">
+                    Custom dashboard creation and expert monthly analysis that translates complex campaign data into clear, actionable business insights.
+                </p>
+                <div class="pt-4 border-t border-slate-200">
+                    <p class="text-sm font-semibold text-brand-orange">Strategic Benefit:</p>
+                    <p class="text-sm text-slate-500 mt-1">Transparent reporting and continuous campaign optimization based on objective performance metrics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-brand-dark to-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Operations?</h2>
+        <p class="text-xl text-slate-300 mb-8">
+            Let's discuss how our integrated services can accelerate your business growth.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="../index.html#contact" class="px-8 py-4 rounded-xl bg-brand-blue text-white font-bold text-lg shadow-xl shadow-blue-500/30 hover:transform hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+                Get a Custom Proposal
+            </a>
+            <a href="./portfolio.html" class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur text-white font-bold text-lg border border-white/20 hover:bg-white/20 transition duration-300">
+                View Our Portfolio
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white pt-16 pb-8 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-brand-blue to-brand-purple flex items-center justify-center text-white">
+                <i class="fa-solid fa-cube"></i>
+            </div>
+            <span class="font-bold text-xl text-slate-900">Cognera Solutions.</span>
+        </div>
+        <p class="text-slate-500 text-sm">&copy; 2025 Cognera Solutions Pvt. Ltd. All Rights Reserved.</p>
+        <div class="flex gap-4">
+            <a href="#" rel="noopener noreferrer" target="_blank" class="text-slate-400 hover:text-brand-blue transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            <a href="#" rel="noopener noreferrer" target="_blank" class="text-slate-400 hover:text-brand-blue transition"><i class="fa-brands fa-twitter text-xl"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scroll-to-top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-brand-blue text-white shadow-lg shadow-blue-500/30 flex items-center justify-center text-xl opacity-0 invisible transition-all duration-300 hover:bg-brand-purple hover:-translate-y-1 z-50">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Main JavaScript -->
+<script src="../js/main.js"></script>
+
+</body>
+</html>

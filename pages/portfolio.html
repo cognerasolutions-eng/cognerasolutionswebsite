@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Cognera Solutions | Case Studies</title>
+    <meta name="description" content="Explore Cognera's portfolio of successful projects: RPO scaling, data verification, content digitization, and lead generation campaigns with measurable results.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Portfolio - Cognera Solutions">
+    <meta property="og:description" content="Explore our case studies with measurable results in RPO, BPO, and marketing.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons: Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#2563EB',
+                            purple: '#7C3AED',
+                            orange: '#F97316',
+                            teal: '#0D9488',
+                            dark: '#0F172A',
+                            light: '#edf2f7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Loading Animation -->
+    <style>
+        body { opacity: 0; animation: fadeInBody 0.5s ease-out 0.1s forwards; }
+        @keyframes fadeInBody { to { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-brand-light text-slate-800 font-sans antialiased overflow-x-hidden">
+
+<!-- Navigation Bar -->
+<nav class="fixed w-full z-50 bg-white/95 backdrop-blur-lg shadow-nav transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-blue to-brand-purple flex items-center justify-center text-white shadow-lg group-hover:shadow-brand-blue/50 transition-all duration-300">
+                    <i class="fa-solid fa-cube text-xl"></i>
+                </div>
+                <span class="font-bold text-2xl tracking-tight text-slate-900">Cognera<span class="text-brand-orange">.</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="../index.html" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition">Home</a>
+                <a href="../index.html#about" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition">Why Us</a>
+                <a href="../index.html#process" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition">Process</a>
+                <a href="./services.html" class="text-sm font-semibold text-slate-600 hover:text-brand-blue transition">Services <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
+                <a href="./portfolio.html" class="text-sm font-bold text-brand-blue transition">Portfolio</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="../index.html#contact" class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-bold rounded-full text-white bg-brand-dark hover:bg-brand-blue transition-colors shadow-lg hover:shadow-brand-blue/30">
+                Contact Our Team
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden absolute top-20 left-0 w-full bg-white border-t border-slate-100 shadow-xl p-4 flex flex-col gap-4">
+        <a href="../index.html" class="text-slate-700 font-semibold p-2 hover:bg-slate-50 rounded-lg">Home</a>
+        <a href="../index.html#about" class="text-slate-700 font-semibold p-2 hover:bg-slate-50 rounded-lg">Why Us</a>
+        <a href="../index.html#process" class="text-slate-700 font-semibold p-2 hover:bg-slate-50 rounded-lg">Process</a>
+        <a href="./services.html" class="text-slate-700 font-semibold p-2 hover:bg-slate-50 rounded-lg flex items-center justify-between">Services <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i></a>
+        <a href="./portfolio.html" class="text-brand-blue font-semibold p-2 bg-blue-50 rounded-lg">Portfolio</a>
+        <a href="../index.html#contact" class="text-center w-full py-3 bg-brand-blue text-white font-bold rounded-xl">Contact Us</a>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<section class="pt-32 pb-16 page-header-gradient">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Breadcrumb -->
+        <nav class="flex mb-6" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-2 text-sm">
+                <li><a href="../index.html" class="text-slate-400 hover:text-white transition">Home</a></li>
+                <li><span class="text-slate-500 breadcrumb-separator">/</span></li>
+                <li><span class="text-white font-medium">Portfolio</span></li>
+            </ol>
+        </nav>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6">
+            Our <span class="text-brand-purple">Portfolio</span>
+        </h1>
+        <p class="text-xl text-slate-300 max-w-3xl">
+            Driving measurable results through execution excellence. Explore our case studies showcasing real impact for our clients.
+        </p>
+    </div>
+</section>
+
+<!-- Stats Overview -->
+<section class="py-12 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <p class="text-4xl font-extrabold text-brand-blue">150+</p>
+                <p class="text-slate-600 mt-1">Roles Filled</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-extrabold text-brand-purple">99.9%</p>
+                <p class="text-slate-600 mt-1">Data Accuracy</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-extrabold text-brand-orange">55%</p>
+                <p class="text-slate-600 mt-1">MQL Increase</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-extrabold text-brand-teal">4</p>
+                <p class="text-slate-600 mt-1">New Territories</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Studies -->
+<section class="py-20 bg-brand-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="space-y-12">
+            
+            <!-- Case Study 1: RPO -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover case-study-card">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                    <div class="bg-gradient-to-br from-brand-blue to-blue-700 p-8 lg:p-12 text-white flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 w-fit">
+                            <i class="fa-solid fa-users"></i> RPO
+                        </div>
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4">Global Recruitment Scaling</h3>
+                        <p class="text-blue-100">Technology & Financial Services, USA Market</p>
+                    </div>
+                    <div class="lg:col-span-2 p-8 lg:p-12">
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Challenge</h4>
+                            <p class="text-slate-600">Clients faced high attrition rates and a need for specialized talent (Tech/Management) without a scalable, cost-effective internal recruiting function.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Cognera Solution</h4>
+                            <p class="text-slate-600">Deployed an expert RPO team to manage end-to-end recruitment, focusing on passive candidate sourcing and enhancing the candidate experience to improve offer acceptance rates.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="bg-blue-50 rounded-xl px-4 py-3 border-l-4 border-brand-blue">
+                                <p class="text-2xl font-extrabold text-brand-blue">28%</p>
+                                <p class="text-sm text-slate-600">Reduced Time-to-Hire</p>
+                            </div>
+                            <div class="bg-blue-50 rounded-xl px-4 py-3 border-l-4 border-brand-blue">
+                                <p class="text-2xl font-extrabold text-brand-blue">150+</p>
+                                <p class="text-sm text-slate-600">Specialized Roles Filled</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2: Data Quality -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover case-study-card">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                    <div class="bg-gradient-to-br from-brand-purple to-purple-700 p-8 lg:p-12 text-white flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 w-fit">
+                            <i class="fa-solid fa-database"></i> BPO
+                        </div>
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4">High-Volume Data Quality & Verification</h3>
+                        <p class="text-purple-100">Enterprise Data Services Provider</p>
+                    </div>
+                    <div class="lg:col-span-2 p-8 lg:p-12">
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Challenge</h4>
+                            <p class="text-slate-600">Need for rapid, accurate verification and cleaning of a large, diverse dataset containing millions of records essential for a major platform launch.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Cognera Solution</h4>
+                            <p class="text-slate-600">Established a dedicated team for structured data verification and cleaning protocols, delivering guaranteed accuracy within a strict four-week timeline.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="bg-purple-50 rounded-xl px-4 py-3 border-l-4 border-brand-purple">
+                                <p class="text-2xl font-extrabold text-brand-purple">99.9%</p>
+                                <p class="text-sm text-slate-600">Data Accuracy Achieved</p>
+                            </div>
+                            <div class="bg-purple-50 rounded-xl px-4 py-3 border-l-4 border-brand-purple">
+                                <p class="text-2xl font-extrabold text-brand-purple">4 Weeks</p>
+                                <p class="text-sm text-slate-600">Strict Deadline Met</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 3: DoorDash -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover case-study-card">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                    <div class="bg-gradient-to-br from-brand-orange to-orange-600 p-8 lg:p-12 text-white flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 w-fit">
+                            <i class="fa-solid fa-utensils"></i> BPO
+                        </div>
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4">F&B Content Digitization</h3>
+                        <p class="text-orange-100">DoorDash - Leading Food Delivery Platform</p>
+                    </div>
+                    <div class="lg:col-span-2 p-8 lg:p-12">
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Challenge</h4>
+                            <p class="text-slate-600">Rapidly onboarding thousands of new restaurants required high-volume, error-free digitization and classification of complex menu data for the platform.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Cognera Solution</h4>
+                            <p class="text-slate-600">Developed a customized workflow and trained a specialized team dedicated solely to menu creation, data standardization, and item categorization.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="bg-orange-50 rounded-xl px-4 py-3 border-l-4 border-brand-orange">
+                                <p class="text-2xl font-extrabold text-brand-orange">40%</p>
+                                <p class="text-sm text-slate-600">Faster Restaurant Onboarding</p>
+                            </div>
+                            <div class="bg-orange-50 rounded-xl px-4 py-3 border-l-4 border-brand-orange">
+                                <p class="text-2xl font-extrabold text-brand-orange">1000s</p>
+                                <p class="text-sm text-slate-600">Restaurants Onboarded</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 4: Global BD -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover case-study-card">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                    <div class="bg-gradient-to-br from-brand-teal to-teal-700 p-8 lg:p-12 text-white flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 w-fit">
+                            <i class="fa-solid fa-globe"></i> Business Development
+                        </div>
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4">Global Sales Expansion for OEMs</h3>
+                        <p class="text-teal-100">Large-scale Manufacturing OEMs</p>
+                    </div>
+                    <div class="lg:col-span-2 p-8 lg:p-12">
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Challenge</h4>
+                            <p class="text-slate-600">Needed to identify and penetrate new, complex international markets quickly and efficiently to secure high-value contracts.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Cognera Solution</h4>
+                            <p class="text-slate-600">Provided comprehensive market intelligence, lead generation, and pitch support across USA, UK, Europe, Middle East & Africa, South East Asia, and Australia.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="bg-teal-50 rounded-xl px-4 py-3 border-l-4 border-brand-teal">
+                                <p class="text-2xl font-extrabold text-brand-teal">4</p>
+                                <p class="text-sm text-slate-600">New Territories Opened</p>
+                            </div>
+                            <div class="bg-teal-50 rounded-xl px-4 py-3 border-l-4 border-brand-teal">
+                                <p class="text-2xl font-extrabold text-brand-teal">9 Months</p>
+                                <p class="text-sm text-slate-600">Pipeline Established</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 5: Lead Generation -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg card-hover case-study-card">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                    <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 lg:p-12 text-white flex flex-col justify-center">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-sm font-semibold mb-4 w-fit">
+                            <i class="fa-solid fa-bullseye"></i> Marketing
+                        </div>
+                        <h3 class="text-2xl lg:text-3xl font-bold mb-4">Targeted Lead Generation Campaign</h3>
+                        <p class="text-slate-300">Mid-Market Software Company</p>
+                    </div>
+                    <div class="lg:col-span-2 p-8 lg:p-12">
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Challenge</h4>
+                            <p class="text-slate-600">Inconsistent lead flow and high cost-per-lead (CPL) due to unfocused digital advertising efforts.</p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wide mb-2">Cognera Solution</h4>
+                            <p class="text-slate-600">Implemented a targeted, multi-channel lead generation campaign focusing on high-intent keywords and integrated a lead scoring system.</p>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="bg-slate-100 rounded-xl px-4 py-3 border-l-4 border-slate-800">
+                                <p class="text-2xl font-extrabold text-slate-800">55%</p>
+                                <p class="text-sm text-slate-600">Increase in MQLs</p>
+                            </div>
+                            <div class="bg-slate-100 rounded-xl px-4 py-3 border-l-4 border-slate-800">
+                                <p class="text-2xl font-extrabold text-slate-800">32%</p>
+                                <p class="text-sm text-slate-600">Reduced CPL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-r from-brand-dark to-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Be Our Next Success Story?</h2>
+        <p class="text-xl text-slate-300 mb-8">
+            Let's discuss how we can deliver measurable results for your business.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="../index.html#contact" class="px-8 py-4 rounded-xl bg-brand-blue text-white font-bold text-lg shadow-xl shadow-blue-500/30 hover:transform hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+                Start a Conversation
+            </a>
+            <a href="./services.html" class="px-8 py-4 rounded-xl bg-white/10 backdrop-blur text-white font-bold text-lg border border-white/20 hover:bg-white/20 transition duration-300">
+                Explore Our Services
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white pt-16 pb-8 border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-brand-blue to-brand-purple flex items-center justify-center text-white">
+                <i class="fa-solid fa-cube"></i>
+            </div>
+            <span class="font-bold text-xl text-slate-900">Cognera Solutions.</span>
+        </div>
+        <p class="text-slate-500 text-sm">&copy; 2025 Cognera Solutions Pvt. Ltd. All Rights Reserved.</p>
+        <div class="flex gap-4">
+            <a href="#" rel="noopener noreferrer" target="_blank" class="text-slate-400 hover:text-brand-blue transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            <a href="#" rel="noopener noreferrer" target="_blank" class="text-slate-400 hover:text-brand-blue transition"><i class="fa-brands fa-twitter text-xl"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scroll-to-top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-brand-blue text-white shadow-lg shadow-blue-500/30 flex items-center justify-center text-xl opacity-0 invisible transition-all duration-300 hover:bg-brand-purple hover:-translate-y-1 z-50">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- Main JavaScript -->
+<script src="../js/main.js"></script>
+
+</body>
+</html>
